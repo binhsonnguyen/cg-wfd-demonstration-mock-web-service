@@ -85,7 +85,7 @@ server.post("/posts", (req, res, next) => {
         kissed: req.body.kissed,
         comments: req.body.comments
     };
-    post.push(post);
+    posts.push(post);
     res.location(`/posts/${post.id}`);
 });
 
